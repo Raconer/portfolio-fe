@@ -1,0 +1,21 @@
+html{
+    overflow: hidden;
+}
+
+.v-container{
+    background: #141517 !important;
+}
+
+/* theme */
+/*.def-theme{*/
+/*    background : #141517 !important;*/
+/*    color: white !important;*/
+/*}*/
+
+/* Common Size */
+.vh-100 {
+    height: 100vh !important;
+}
+
+
+
