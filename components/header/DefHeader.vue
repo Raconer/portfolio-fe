@@ -3,10 +3,8 @@
       <div class="app-bar-nav">
         <v-app-bar-nav-icon  @click="onSideBar" />
       </div>
-      <v-toolbar-title>Title {{rail}}</v-toolbar-title>
-
+      <v-toolbar-title>Title {{isOn}}</v-toolbar-title>
       <v-spacer/>
-
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
@@ -19,17 +17,17 @@
     </v-toolbar>
 </template>
 <script lang="ts">
-import {defineComponent} from "vue";
+
 export default defineComponent ({
   props:{
-    rail:{
+    isOn:{
       type: Boolean,
       default:true
     }
   },
   methods:{
     onSideBar(){
-        this.$emit("onSideBar", !this.rail)
+        this.$emit("onSideBar", !this.isOn)
     }
   }
 })

@@ -1,10 +1,26 @@
-html{
+html, body{
+    height: 100%;
+}
+#__nuxt{
+    height: 100%;
 }
 
 /* Common Size */
+.d-grid{
+    display: grid !important;
+    grid-template-rows: auto 1fr auto  !important;;
+    height: 100vh  !important;; /* Viewport height */
+}
+
 .vh-100 {
     height: 100vh !important;
 }
 
-
+/*  */
+.pr-only{
+    padding: 0 12px 0 0 !important;;
+}
+.pl-only{
+    padding: 0 0 0 12px !important;
+}
 

@@ -1,10 +1,10 @@
 <template>
   <v-layout class="h-100">
       <v-navigation-drawer
+          border="white md"
           class="def-theme"
-          :rail="rail"
+          :rail="isOn"
           permanent
-          @click="rail = false"
       >
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-home-city" title="Home" value="home"/>
@@ -12,18 +12,16 @@
           <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"/>
         </v-list>
       </v-navigation-drawer>
-      <v-main style="height: 250px"></v-main>
+      <v-main ></v-main>
   </v-layout>
 </template>
 <script lang="ts">
 export default {
   props:{
-    rail:{
+    isOn:{
       type: Boolean,
       default:true
     }
   }
 }
 </script>
-<style lang="css">
-</style>
