@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="vh-100">
+  <v-layout class="h-100">
       <v-navigation-drawer
           class="def-theme"
           :rail="rail"

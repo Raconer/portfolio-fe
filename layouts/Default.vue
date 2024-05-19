@@ -7,14 +7,13 @@
         </v-card>
       </v-row>
       <v-row no-gutters>
-        <v-sheet class="w-100 vh-100 d-flex">
+        <v-sheet class="w-100 d-flex">
           <v-sheet >
             <def-side :rail/>
           </v-sheet>
-          <v-sheet class="w-100 content pa-3" >
-            <slot class="def-theme"/>
-          </v-sheet>
+          <slot/>
         </v-sheet>
+        <def-footer/>
       </v-row>
     </v-layout>
   </v-container>
