@@ -19,7 +19,8 @@
     </v-toolbar>
 </template>
 <script lang="ts">
-export default {
+import {defineComponent} from "vue";
+export default defineComponent ({
   props:{
     rail:{
       type: Boolean,
@@ -31,7 +32,7 @@ export default {
         this.$emit("onSideBar", !this.rail)
     }
   }
-}
+})
 </script>
 <style lang="css" >
   /* 2. DefHeader */
