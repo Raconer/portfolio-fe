@@ -5,6 +5,7 @@
           class="def-theme"
           :rail="isOn"
           permanent
+          rail-width="60"
       >
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-home-city" title="Home" value="home"/>

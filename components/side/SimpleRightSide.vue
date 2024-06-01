@@ -5,12 +5,25 @@
         location="right"
         :rail="isOn"
         permanent
+        width="500"
     >
       <v-list density="compact" nav>
         <v-list-item prepend-icon="mdi-home-city" title="Home" value="home" @click="onSideBar"></v-list-item>
-        <v-list-item prepend-icon="mdi-account" title="My Account" value="account" @click="onSideBar"></v-list-item>
-        <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users" @click="onSideBar"></v-list-item>
+        <v-list-item>
+          <v-card>
+            <v-img
+                src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
+                class="align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                height="200px"
+                cover
+            >
+              <v-card-title class="text-white" v-text="'Pre-fab homes'"/>
+            </v-img>
+          </v-card>
+        </v-list-item>
       </v-list>
+
     </v-navigation-drawer>
     <v-main></v-main>
   </v-layout>

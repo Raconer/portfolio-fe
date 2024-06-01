@@ -1,15 +1,10 @@
-html, body{
-    height: 100%;
-}
-#__nuxt{
-    height: 100%;
+html, body, #__nuxt{
+    min-height: 100vh;
 }
 
 /* Common Size */
 .d-grid{
     display: grid !important;
-    grid-template-rows: auto 1fr auto  !important;;
-    height: 100vh  !important;; /* Viewport height */
 }
 
 .vh-100 {
