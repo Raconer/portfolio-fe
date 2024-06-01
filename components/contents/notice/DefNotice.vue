@@ -25,7 +25,7 @@
 </template>
 <script lang="ts">
 import type {DefNotice} from "~/types/notice/Notice";
-import {defineComponent} from "vue";
+
 
 export default defineComponent({
   props: {

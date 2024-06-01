@@ -1,5 +1,5 @@
 <template>
-  <v-sheet class="w-100 content pa-3">
+  <div>
     <v-row
         class="justify-center"
         align="center"
@@ -40,12 +40,12 @@
     <v-row>
       <card-list v-for="i in 30" :key="i"/>
     </v-row>
-  </v-sheet>
+  </div>
 </template>
 
 <script lang="ts">
 import type {DefNotice} from "~/types/notice/Notice";
-import {defineComponent} from "vue";
+
 const test_noticeList: DefNotice[] = [
   {
     id: 0,

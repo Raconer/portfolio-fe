@@ -1,34 +1,35 @@
 <template>
-  <v-container class="pa-0 h-1" fluid>
+  <v-container class="pa-0" fluid>
     <v-layout class="flex-column">
       <v-row no-gutters >
         <v-card class="w-100 rounded-0" flat>
-          <def-header :rail="rail" @onSideBar="onSideBar" />
+          <def-header v-model:isOn="isOn" @onSideBar="onSideBar" />
         </v-card>
       </v-row>
-      <v-row no-gutters>
+      <v-row no-gutters style="min-height: 100vh;">
         <v-sheet class="w-100 d-flex">
-          <v-sheet >
-            <def-side :rail/>
+          <def-side :is-on="isOn" />
+          <v-sheet class="w-100 content pa-3  mb-6">
+            <slot/>
           </v-sheet>
-          <slot/>
         </v-sheet>
-        <def-footer/>
       </v-row>
     </v-layout>
   </v-container>
 </template>
 <script lang="ts">
-import {defineComponent} from "vue";
+
 export default defineComponent({
   data (){
+    let isOn:Boolean = true
+
     return {
-      rail:true
+      isOn
     }
   },
   methods:{
     onSideBar(isOn:boolean){
-      this.rail = isOn
+      this.isOn = isOn
     }
   }
 })

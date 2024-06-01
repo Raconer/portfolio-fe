@@ -3,7 +3,6 @@ import vuetifyOptions from "./vuetify.options";
 
 export default defineNuxtConfig({
     devtools: {enabled: true},
-
     typescript: {
         typeCheck: false
     },

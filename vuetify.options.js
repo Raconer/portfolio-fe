@@ -11,6 +11,7 @@ export default ({
                     warning: '#33c',
                     error: '#33c',
                     success: '#33c',
+                    white: '#ffffff'
                 },
             },
             light: {
@@ -22,6 +23,7 @@ export default ({
                     warning: '#3fd',
                     error: '#3fd',
                     success: '#3fd',
+                    white: '#ffffff'
                 }
             },
         }
