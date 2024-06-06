@@ -1,7 +1,6 @@
 <template>
   <v-layout class="h-100">
       <v-navigation-drawer
-          border="white md"
           class="def-theme"
           :rail="isOn"
           permanent
@@ -13,7 +12,11 @@
           <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"/>
         </v-list>
       </v-navigation-drawer>
-      <v-main ></v-main>
+      <v-main>
+        <div class="pa-3">
+          <slot/>
+        </div>
+      </v-main>
   </v-layout>
 </template>
 <script lang="ts">

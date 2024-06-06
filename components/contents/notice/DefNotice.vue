@@ -3,7 +3,6 @@
       v-for="(notice, i) in noticeList"
       :key="i"
       class="pa-0 rounded-0"
-      :class="getNoticeListClass(i)"
       color="white"
       max-width="344"
   >

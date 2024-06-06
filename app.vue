@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout >
-    <RouterView/>
+    <NuxtPage/>
   </NuxtLayout>
 </template>
 
-<style src="@/assets/styles.css"></style>
+<style src="@/assets/styles.css"/>
