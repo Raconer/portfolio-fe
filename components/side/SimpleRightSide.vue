@@ -23,7 +23,6 @@
           </v-card>
         </v-list-item>
       </v-list>
-
     </v-navigation-drawer>
     <v-main></v-main>
   </v-layout>

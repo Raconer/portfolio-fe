@@ -14,7 +14,7 @@
       </v-navigation-drawer>
       <v-main>
         <div class="pa-3">
-          <slot/>
+          <slot name="main"/>
         </div>
       </v-main>
   </v-layout>

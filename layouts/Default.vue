@@ -9,7 +9,9 @@
       <v-row no-gutters class="vh-100" >
         <div class="w-100 d-flex">
           <def-side :is-on="isOn">
-            <slot/>
+            <template v-slot:main>
+              <slot/>
+            </template>
           </def-side>
         </div>
       </v-row>

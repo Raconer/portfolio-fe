@@ -5,7 +5,7 @@
         <v-card border="white md">
           <v-card-item>
             <v-card-title>
-              History
+              경력
             </v-card-title>
           </v-card-item>
           <v-card-text class="overflow-auto">
@@ -15,8 +15,7 @@
       </v-col>
     </v-row>
     <v-row class="pl-3 pr-3" dense>
-      <v-chip-group
-      >
+      <v-chip-group>
         <v-chip
             class="ma-2"
             color="yellow"
