@@ -43,7 +43,7 @@
         </v-card-text>
       </v-card>
     </v-timeline-item>
-    <history-form-modal ref="dialog"/>
+    <history-form-modal ref="timeLine"/>
   </v-timeline>
 </template>
 
@@ -57,7 +57,7 @@ export default defineComponent({
   },
   methods:{
     openModal(){
-      this.$refs.dialog.openDialog()
+      this.$refs.timeLine.showSwitch()
     }
   }
 })

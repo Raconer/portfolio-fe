@@ -1,4 +1,3 @@
-// @ts-ignore
 import vuetifyOptions from "./vuetify.options";
 
 export default defineNuxtConfig({

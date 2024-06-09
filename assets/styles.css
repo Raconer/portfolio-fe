@@ -2,6 +2,7 @@ html, body, #__nuxt{
     min-height: 100vh;
 }
 
+/* Common z-index */
 /* Common Size */
 .d-grid{
     display: grid !important;
@@ -19,3 +20,16 @@ html, body, #__nuxt{
     padding: 0 0 0 12px !important;
 }
 
+/* Custom Date Picker */
+.cus-date-input-close{
+    height: 0 !important;
+    width: 0 !important;
+    margin-top: 56px;
+}
+.cus-date-input-open{
+    transition : height 0.3s ease-in;
+    height: 464px;
+    margin-top: 56px;
+    overflow: hidden;
+    z-index:1 !important;
+}
