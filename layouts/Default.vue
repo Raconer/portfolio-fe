@@ -6,13 +6,14 @@
           <def-header v-model:isOn="isOn" @onSideBar="onSideBar" />
         </v-card>
       </v-row>
-      <v-row no-gutters style="min-height: 100vh;">
-        <v-sheet class="w-100 d-flex">
-          <def-side :is-on="isOn" />
-          <v-sheet class="w-100 content pa-3  mb-6">
-            <slot/>
-          </v-sheet>
-        </v-sheet>
+      <v-row no-gutters class="vh-100" >
+        <div class="w-100 d-flex">
+          <def-side :is-on="isOn">
+            <template v-slot:main>
+              <slot/>
+            </template>
+          </def-side>
+        </div>
       </v-row>
     </v-layout>
   </v-container>
