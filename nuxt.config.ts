@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     },
     modules: ["vuetify-nuxt-module"],
     plugins:[
+        {src : "~/plugins/quill.client",
+        mode: "client",
+        ssr : false}
     ],
     vuetify: {
         moduleOptions: {
