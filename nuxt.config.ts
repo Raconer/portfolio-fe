@@ -1,16 +1,19 @@
 import vuetifyOptions from "./vuetify.options";
 
+// @ts-ignore
 export default defineNuxtConfig({
     devtools: {enabled: true},
     typescript: {
         typeCheck: false
     },
     modules: ["vuetify-nuxt-module"],
+    plugins:[
+    ],
     vuetify: {
         moduleOptions: {
             /* module specific options */
         },
-        vuetifyOptions
+        vuetifyOptions,
     },
     components: [
         {
